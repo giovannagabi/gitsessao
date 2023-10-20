@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Insira os dados na tabela 'users'
-    $stmt = $pdo->prpare("INSERT INTO usuarios (usuario, senha, email) VALUES (?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO usuarios (usuario, senha, email) VALUES (?, ?, ?)");
 
     $_SESSION["usuario"] = $usuario;
     header("Location: deshboard.php");

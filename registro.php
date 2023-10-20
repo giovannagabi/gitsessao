@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare("INSERT INTO usuarios (usuario, senha, email) VALUES (?, ?, ?)");
 
     $_SESSION["usuario"] = $usuario;
-    header("Location: deshboard.php");
+    header("Location: dashboard.php");
 }
 ?>
 <!DOCTYPE html>
